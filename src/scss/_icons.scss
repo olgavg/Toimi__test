@@ -1,0 +1,32 @@
+[class^="icon_"] {
+  width: 32px;
+  height: 32px;
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+}
+.icon_menu {
+  &::after {
+    background-image: url(../img/icon-menu.svg);
+    width: 32px;
+    height: 7.2px;
+  }
+}
+.icon_cross {
+  &::after {
+    background-image: url(../img/icon-cross.svg);
+    width: 32px;
+    height: 32px;
+  }
+}
+.icon-arrow-right-up {
+  width: 9px;
+  height: 9px;
+}

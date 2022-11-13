@@ -1,0 +1,39 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+[class*=col-] {
+  padding: 0 1.5rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width: $md) {
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}

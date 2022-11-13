@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff2') format('woff2'), url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  color: $primary-color;
+  margin: 0 0 2.2rem;
+}
+
+@media screen and (min-width: $md) {
+  h1 {
+    font-size: 6rem;
+    line-height: 2;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  h1 {
+    font-size: 8rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}

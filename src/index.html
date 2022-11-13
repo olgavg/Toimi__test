@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Тестовое задание</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png"> -->
+    <meta name="description" content="тестовое задание">
+    <meta name="author" content="Кодер">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  </head>
+  <body class="page">
+    <header>
+      <div class="wrapper-fluid">
+        <div class="navbr">
+          <div class="navbr__brand">
+            <svg class="icon-logo">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </div>
+          <div class="icon_menu" id="mobileMenu" onclick="mobileMenu()"></div>
+          <div class="navbr__nav" id="navBarNav">    
+            <ul class="navbr__list">        
+              <li class="navbr__item">
+                <a href="#">Проекты</a>     
+              </li>      
+              <li class="navbr__item">
+                <a href="#">О компании</a>     
+              </li> 
+              <li class="navbr__item">
+                <a href="#" class="navbr__item_active">Контакты</a>   
+              </li> 
+            </ul>
+
+            <div class="navbr__info">
+              <ul class="navbr__list list__lng">        
+                <li class="navbr__item">
+                  <a href="#" class="navbr__item_active">RU</a>    
+                </li>      
+                <li class="navbr__item">
+                  <a href="#">EN</a>   
+                </li>     
+              </ul>        
+              <button class="button button_icon-right button_icon-circle">
+                начать проект
+                <svg class="icon-arrow-right">
+                  <use xlink:href="#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>          
+        </div> 
+      </div>
+    </header>
+    <main class="page__content">
+      <section class="wrapper-fluid page__rules">        
+        <aside><i class="icon_menu"></i></aside>
+        <section class="wrapper">
+          <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li class="active"><a href="#">Контакты</a></li>
+          </ul>
+          <h1>Мы рядом</h1>
+          <div class="desc">Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите нам на почту <a href="mailto:info@site.com">info@site.com</a></div>
+          <form name="ACTION_PART" enctype="multipart/form-data">        
+            <div class="form__send">
+              <div class="form__send_fields">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="field-wrapper">
+                        <input type="text" class="field-wrapper__input" name="form_name" autocomplete="off" required>
+                        <label class="field-wrapper__label">Ваше имя<span>*</span></label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="field-wrapper">
+                        <input type="text" class="field-wrapper__input" name="form_name" autocomplete="off" required>
+                        <label class="field-wrapper__label">Ваш емейл<span>*</span></label>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="field-wrapper">
+                      <textarea class="field-wrapper__textarea" rows="3" required></textarea>
+                      <label class="field-wrapper__label">Комментарий<span>*</span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="field-wrapper">
+                      <input type="radio" name="radio1" id="radio1" class="field-wrapper__radio">
+                      <label for="radio1">Согласен с <a href="#">Политикой конфиденциальности</a></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__send_button">
+                <button class="button button__icon-plane" type="submit" name="form_submit">
+                  <div class="button__gradient-border">
+                    <div class="button__content">
+                      <div class="icon-plane">
+                        <img src="./img/icon-plane.svg" />
+                      </div> 
+                      <div class="button__text">Отправить</div>  
+                      <div class="button__text_sent">Ваше сообщение отправлено</div>   
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>           
+        </section>
+      </section>      
+    </main>
+    <footer class="page__footer page__footer_bg">
+      <section class="wrapper-fluid footer__rules">
+        <section class="wrapper">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <div class="navbr__brand navbr__brand_white">
+                <svg class="icon-logo">
+                  <use xlink:href="#icon-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer__header">Услуги</div>
+              <ul class="footer__list">
+                <li>Support and development</li>
+                <li>UI/UX and product design</li>
+                <li>Progressive Web Applications (PWA)</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer__header">Компания</div>
+              <ul class="footer__list">
+                <li>О компании</li>
+                <li>Проекты</li>
+                <li>Контакты</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="footer__header">Контакты</div>
+              <div class="footer__box">
+                <ul class="footer__list">
+                  <li>Скачать презентацию
+                    <svg class="icon-arrow-right-up">
+                      <use xlink:href="#icon-arrow-right-up"></use>
+                    </svg>
+                  </li>
+                  <li><span class="footer__text_b">+7 (499) 999-99-99</span></li>
+                  <li>info@site.com</li>
+                </ul>
+                <div class="social__icons">
+                  <svg class="icon-whatsapp">
+                    <use xlink:href="#icon-whatsapp"></use>
+                  </svg>
+                  <svg class="icon-telegram">
+                    <use xlink:href="#icon-telegram"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-9">© Company 2022. All rights reserved.</div>
+              <div class="col-12 col-md-4 col-lg-3">Политика конфиденциальности</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </footer>
+
+    <div style="display: none;">  
+      <svg id="icon-logo" viewBox="0 0 109 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8 0.999998V22.84H16.8V29H0.4V0.999998H6.8ZM41.6972 25.36C38.8705 28.16 35.4305 29.56 31.3772 29.56C27.3239 29.56 23.8839 28.16 21.0572 25.36C18.2305 22.56 16.8172 19.1067 16.8172 15C16.8172 10.8933 18.2305 7.44 21.0572 4.64C23.8839 1.84 27.3239 0.439998 31.3772 0.439998C35.4305 0.439998 38.8705 1.84 41.6972 4.64C44.5239 7.44 45.9372 10.8933 45.9372 15C45.9372 19.1067 44.5239 22.56 41.6972 25.36ZM23.2172 15C23.2172 17.4533 23.9905 19.4533 25.5372 21C27.0839 22.5467 29.0305 23.32 31.3772 23.32C33.6972 23.32 35.6305 22.5467 37.1772 21C38.7505 19.4267 39.5372 17.4267 39.5372 15C39.5372 12.5733 38.7505 10.5733 37.1772 9C35.6305 7.45333 33.6972 6.68 31.3772 6.68C29.0305 6.68 27.0839 7.45333 25.5372 9C23.9905 10.5467 23.2172 12.5467 23.2172 15ZM63.2206 13.4H77.2606V15.8C77.2606 19.96 75.954 23.3067 73.3406 25.84C70.754 28.32 67.4606 29.56 63.4606 29.56C59.114 29.56 55.5006 28.16 52.6206 25.36C49.7673 22.56 48.3406 19.12 48.3406 15.04C48.3406 10.96 49.754 7.50667 52.5806 4.68C55.4073 1.85333 58.8873 0.439998 63.0206 0.439998C65.6073 0.439998 67.9806 1.02667 70.1406 2.2C72.3273 3.34667 74.034 4.89333 75.2606 6.84L69.8206 9.96C69.1806 8.97333 68.2473 8.18667 67.0206 7.6C65.8206 6.98667 64.474 6.68 62.9806 6.68C60.6073 6.68 58.634 7.46667 57.0606 9.04C55.514 10.5867 54.7406 12.6 54.7406 15.08C54.7406 17.48 55.5406 19.4667 57.1406 21.04C58.7406 22.56 60.874 23.32 63.5406 23.32C67.2206 23.32 69.6073 21.88 70.7006 19H63.2206V13.4ZM104.549 25.36C101.722 28.16 98.2821 29.56 94.2288 29.56C90.1754 29.56 86.7354 28.16 83.9088 25.36C81.0821 22.56 79.6688 19.1067 79.6688 15C79.6688 10.8933 81.0821 7.44 83.9088 4.64C86.7354 1.84 90.1754 0.439998 94.2288 0.439998C98.2821 0.439998 101.722 1.84 104.549 4.64C107.375 7.44 108.789 10.8933 108.789 15C108.789 19.1067 107.375 22.56 104.549 25.36ZM86.0688 15C86.0688 17.4533 86.8421 19.4533 88.3888 21C89.9354 22.5467 91.8821 23.32 94.2288 23.32C96.5488 23.32 98.4821 22.5467 100.029 21C101.602 19.4267 102.389 17.4267 102.389 15C102.389 12.5733 101.602 10.5733 100.029 9C98.4821 7.45333 96.5488 6.68 94.2288 6.68C91.8821 6.68 89.9354 7.45333 88.3888 9C86.8421 10.5467 86.0688 12.5467 86.0688 15Z"/>
+      </svg>
+
+      <svg id="icon-arrow-right" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 8L12 8V6H11V8ZM0 8L11 8V6L0 6L0 8Z" fill="#388AF3"/>
+        <path d="M7 13L13 7L7 1" stroke="#388AF3" stroke-width="2"/>
+      </svg>
+      
+      <svg id="icon-whatsapp" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="17" fill="#7BE495"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4381 12.7497C15.2881 12.4162 15.1302 12.4095 14.9875 12.4037C14.8707 12.3987 14.7371 12.399 14.6037 12.399C14.4701 12.399 14.2532 12.4492 14.0697 12.6496C13.8861 12.85 13.3687 13.3344 13.3687 14.3197C13.3687 15.3051 14.0864 16.2572 14.1864 16.391C14.2865 16.5245 15.5719 18.6111 17.6074 19.4138C19.2991 20.0809 19.6434 19.9482 20.0106 19.9148C20.3778 19.8814 21.1954 19.4305 21.3623 18.9628C21.5293 18.4952 21.5293 18.0945 21.4792 18.0107C21.4291 17.9272 21.2956 17.8772 21.0953 17.777C20.895 17.6769 19.9104 17.1923 19.7268 17.1256C19.5432 17.0588 19.4097 17.0254 19.2762 17.2259C19.1427 17.4262 18.7591 17.8772 18.6422 18.0107C18.5254 18.1445 18.4086 18.1612 18.2083 18.0611C18.008 17.9606 17.363 17.7494 16.5978 17.0671C16.0025 16.5363 15.6005 15.8808 15.4837 15.6803C15.3669 15.48 15.4712 15.3715 15.5716 15.2717C15.6616 15.182 15.7719 15.0379 15.8721 14.921C15.972 14.804 16.0054 14.7206 16.0722 14.5871C16.1389 14.4533 16.1055 14.3364 16.0555 14.2362C16.0054 14.1361 15.6162 13.1457 15.4381 12.7497Z" fill="white"/>
+        <path d="M23.1108 10.4372C21.5975 8.92279 19.5852 8.08835 17.4413 8.0874C13.0233 8.0874 9.42795 11.6816 9.42617 16.0993C9.42565 17.5115 9.79463 18.89 10.496 20.1051L9.35889 24.2569L13.6078 23.1428C14.7784 23.7812 16.0965 24.1177 17.4378 24.1182H17.4412H17.4413C21.8585 24.1182 25.4543 20.5234 25.4562 16.1058C25.457 13.9648 24.624 11.9517 23.1108 10.4372ZM17.4413 22.765H17.4387C16.2431 22.7643 15.0706 22.4434 14.048 21.8365L13.8046 21.6923L11.2832 22.3533L11.9564 19.8959L11.7978 19.644C11.1309 18.5836 10.7789 17.3582 10.7794 16.0999C10.7808 12.428 13.7691 9.44073 17.4438 9.44073C19.2232 9.44146 20.8957 10.1351 22.1535 11.3938C23.4113 12.6525 24.1034 14.3257 24.1029 16.1053C24.1013 19.7773 21.1129 22.765 17.4413 22.765Z" fill="white"/>
+      </svg>
+      
+      <svg id="icon-telegram" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="17" r="17" fill="#388AF3"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9414 10.0283L7.25081 15.6496C6.24393 16.0402 6.2617 16.5934 7.07813 16.8504L10.839 18.0148L19.5633 12.5636C19.9683 12.2964 20.3441 12.4476 20.0369 12.716L12.9772 19.0455L12.7068 22.8926C13.1004 22.8926 13.2718 22.7225 13.475 22.5209L15.3122 20.7643L19.1214 23.5504C19.8159 23.941 20.3124 23.7394 20.4978 22.9102L22.9991 11.2153L22.9978 11.2165C23.2188 10.1933 22.6233 9.7838 21.9414 10.0283Z" fill="white"/>
+      </svg>    
+      
+      <svg id="icon-arrow-right-up" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.82107 0.964455C8.82107 0.550241 8.48528 0.214455 8.07107 0.214455L1.32107 0.214455C0.906854 0.214455 0.571068 0.550241 0.571068 0.964455C0.571068 1.37867 0.906854 1.71445 1.32107 1.71445H7.32107V7.71445C7.32107 8.12867 7.65685 8.46445 8.07107 8.46445C8.48528 8.46445 8.82107 8.12867 8.82107 7.71445L8.82107 0.964455ZM1.53033 8.56585L8.6014 1.49478L7.54074 0.434125L0.46967 7.50519L1.53033 8.56585Z" fill="white"/>
+      </svg>
+        
+    </div>
+    <script src="./js/mobile-menu.js" async></script>
+  </body>
+</html>

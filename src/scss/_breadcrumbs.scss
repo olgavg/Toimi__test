@@ -1,0 +1,38 @@
+.breadcrumbs {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.16;  
+  display: flex;
+  color: $main-text-color;
+  margin-bottom: 5.7rem;
+  li {
+    position: relative;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    &::after {
+      content: '-';
+      position: absolute;
+      top: 0;
+      right: -.5rem;
+      display: inline-flex;      
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+  a {
+    color: $main-text-color;
+  }
+  .active {
+    font-weight: 800;
+  }
+
+  @media screen and (min-width: $md) {
+    margin-bottom: 6.1rem;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    font-size: 1.8rem;
+  }
+}

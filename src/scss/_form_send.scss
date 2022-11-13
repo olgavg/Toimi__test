@@ -1,0 +1,34 @@
+.form__send {
+  display: flex; 
+  flex-direction: column;  
+  &_fields {
+    margin-bottom: 0;    
+  }  
+}
+
+@media screen and (min-width: $md) {
+  .form__send {
+    &_fields {
+      margin-bottom: 3rem;    
+    } 
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .form__send {
+    flex-direction: row;
+    align-items: flex-end;
+    &_fields {
+      margin: 0 10% 0 0;  
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  .form__send {
+    &_fields {
+      margin: 0 15% 0 0;  
+    }
+  }
+}
